@@ -2,7 +2,22 @@
 
 A DEBRIEF mission record (protocol https://github.com/Nervous-Machine/DEBRIEF) for **The claimed finite-time blow-up of the three-dimensional Navier–Stokes equations with a smooth force, announced by OpenAI on 8 September 2026 with a Lean development**.
 
-**Standing.** Certified 0. Accepted 0. Refuted 0. Open gaps 4. This record is at tier zero: the claim and its public artifacts are pinned, the checks still owed are listed, and nothing has been run or read yet. The first contribution is open.
+<!-- standing:begin -->
+**Standing, 22 Nov 2026.** Stage: Registered. Needs next: The Lean development has not been built or kernel-checked by anyone outside the claimant ([what would close it](ASKS.md)).
+
+| certified | accepted | refuted | open gaps | cycles filed | last cycle |
+|---|---|---|---|---|---|
+| 0 | 0 | 0 | 4 | 0 | 22 Nov 2026 |
+
+| | |
+|---|---|
+| checked by machine | nobody yet; reported elsewhere, not filed here: [Deep Bhattacharjee (Zenodo 10.5281/zenodo.23286556)](https://zenodo.org/records/23286556) |
+| read by a person | nobody yet; no reading guide yet |
+| elsewhere | [DeepMind formal-conjectures](https://github.com/google-deepmind/formal-conjectures/blob/2207c54d0dbe960de591d280f997b195bf3f6e28/FormalConjectures/Millennium/NavierStokes.lean): (C) and (D) marked research solved, citing an internal OpenAI model; (A) and (B) research open · [Clay Mathematics Institute](https://www.claymath.org/millennium/navier-stokes-equation/): Active · [DeepMind formal-conjectures, NavierStokes.lean](https://raw.githubusercontent.com/google-deepmind/formal-conjectures/main/FormalConjectures/Millennium/NavierStokes.lean): research solved |
+| related | [Navier–Stokes blow-up, unforced (Alpöge and Buckmaster)](https://github.com/Nervous-Machine/DEBRIEF-math-navierstokes): the forced case; the force is what the other claim removes; same problem page · same claimant: [Prime gaps ≤ 186 (OpenAI)](https://github.com/Nervous-Machine/DEBRIEF-math-primegaps) |
+
+Rendered from `ledger/` at regeneration; the full record is `SCORECARD.md`, what is owed is `ASKS.md`. Standing words: nothing has standing yet.
+<!-- standing:end -->
 
 This claim is on the public claims board, https://math-board.nervousmachine.com, which shows its stage, who has contributed, and what it needs next.
 
