@@ -71,6 +71,44 @@
      "kind": "formal statement (third party)",
      "ref": "github.com/google-deepmind/formal-conjectures FormalConjectures/Millennium/NavierStokes.lean at 2207c54d0dbe960de591d280f997b195bf3f6e28"
     }
+   ],
+   "tooling": [
+    {
+     "by": "OpenAI",
+     "tier": "internal",
+     "basis": "stated in the repository's formalization.yaml: GPT-6 Astra agents in the Codex framework; the claimant is the model's maker",
+     "models": [
+      {
+       "model": "GPT-6 Astra",
+       "id": "gpt-6-astra",
+       "vendor": "OpenAI",
+       "public_release": "2026-09-03",
+       "tiers_at_release": [
+        "subscription",
+        "subscription-pro",
+        "api"
+       ],
+       "public_at_the_time": "yes",
+       "note": "public 5 days before the date submitted; the work's start is not stated"
+      },
+      {
+       "model": "OpenAI Codex (agent)",
+       "id": "codex",
+       "vendor": "OpenAI",
+       "public_release": "2025-05-16",
+       "tiers_at_release": [
+        "subscription-pro",
+        "subscription"
+       ],
+       "public_at_the_time": "yes"
+      }
+     ],
+     "work": {
+      "to": "2026-09-08"
+     },
+     "duration": "\"developed over the weekend\" before the announcement, per OpenAI's press briefing as reported",
+     "compute": "not stated"
+    }
    ]
   }
  ],

@@ -1,0 +1,14 @@
+# Tooling disclosure for this record's claim(s): which models, at what access tier, over what time, as stated by the
+# claimant or inferred from the public record (the basis says which). Read by DEBRIEF/tools/tooling.py into the ledger.
+# Tier words and model release dates: DEBRIEF/tools/models.yaml. Nothing here is a standing.
+claims:
+- by: OpenAI
+  models:
+  - gpt-6-astra
+  - codex
+  tier: internal
+  basis: 'stated in the repository''s formalization.yaml: GPT-6 Astra agents in the Codex framework; the claimant
+    is the model''s maker'
+  work:
+    to: '2026-09-08'
+  duration: '"developed over the weekend" before the announcement, per OpenAI''s press briefing as reported'

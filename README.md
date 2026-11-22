@@ -15,6 +15,7 @@ A DEBRIEF mission record (protocol https://github.com/Nervous-Machine/DEBRIEF) f
 | read by a person | nobody yet; no reading guide yet |
 | elsewhere | [Clay Mathematics Institute](https://www.claymath.org/millennium/navier-stokes-equation/): Active · [DeepMind formal-conjectures, NavierStokes.lean](https://raw.githubusercontent.com/google-deepmind/formal-conjectures/main/FormalConjectures/Millennium/NavierStokes.lean): research solved |
 | related | [Navier–Stokes blow-up, unforced (Alpöge and Buckmaster)](https://github.com/Nervous-Machine/DEBRIEF-math-navierstokes): the forced case; the force is what the other claim removes; same problem page · same claimant: [Prime gaps ≤ 186 (OpenAI)](https://github.com/Nervous-Machine/DEBRIEF-math-primegaps) |
+| tooling | GPT-6 Astra, OpenAI Codex (agent) · tier: internal · "developed over the weekend" before the announcement, per OpenAI's press briefing as reported (stated in the repository's formalization.yaml: GPT-6 Astra agents in the Codex framework; the claimant is the model's maker) |
 
 Rendered from `ledger/` at regeneration; the full record is `SCORECARD.md`, what is owed is `ASKS.md`. Standing words: nothing has standing yet.
 <!-- standing:end -->
