@@ -1,0 +1,416 @@
+{
+ "missions": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-22T20:13:05Z",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "provenance": {
+    "source": "public record to 2026-11-22: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "title": "The claimed finite-time blow-up of the three-dimensional Navier–Stokes equations with a smooth force, announced by OpenAI on 8 September 2026 with a Lean development",
+   "kind": "audit",
+   "protocol_version": "0.1.0",
+   "claim_rule_met": false,
+   "label": "Navier–Stokes blow-up, forced (OpenAI)",
+   "area": "Partial differential equations: regularity of the Navier–Stokes equations",
+   "rests_on": "a 166-page paper, a Lean 4 development with Comparator challenge files, and a metadata file recording the review status as self-assessed",
+   "pods": [
+    "DEBRIEF-math-navierstokes-forced"
+   ],
+   "began": "2026-11-22",
+   "status": "active",
+   "record_quality": "full_ledger",
+   "record_note": "Opened at tier zero: the claim and its artifacts are pinned, the gaps are drawn, nothing has been run or read by Nervous Machine.",
+   "record_limits": [
+    "Nothing in this record has been checked by Nervous Machine or by anyone independent of the claimants; every item is an open gap."
+   ],
+   "scope_limits": [
+    "Nervous Machine keeps score of the checks; it does not check the mathematics line by line.",
+    "Public record through 2026-11-22."
+   ],
+   "opening": {
+    "spoken": "This record covers the claimed solution of Navier–Stokes existence and smoothness: what has been claimed, what it rests on, and what would have to be checked by whom."
+   },
+   "short_version": {
+    "spoken": "On 8 September 2026 OpenAI announced that an internal model had constructed, for every positive viscosity, a smooth force compactly supported in space and time and a solution of the three-dimensional Navier–Stokes equations starting from rest whose velocity becomes unbounded in finite time while its kinetic energy stays bounded, on space and on the torus. In the Clay formulation this is alternatives (C) and (D), which allow a force; alternatives (A) and (B), the unforced existence question, are untouched, and the day before the announcement Tristan Buckmaster had posted that he and Levent Alpöge had forced blow-up for the Euler equations by the same program, which they credit to Córdoba and Martínez-Zoroa. A Lean development accompanies the paper. A third party reports building it in October: no sorry, the three standard axioms, and statements identical to DeepMind's formal-conjectures file, which has since marked (C) and (D) as solved. A preprint by Bastounis, Circelli and Hansen reports that one lemma's Lean translation is weaker than the paper's statement, without claiming the result fails. No referee report exists. In November Alpöge and Buckmaster claimed the unforced case, recorded separately."
+   },
+   "what_happened": {
+    "spoken": "The claim was pinned from the public record: the problem page, the proof-claims thread, and every artifact the claimants made public, by commit or hash. Nothing was run. The gaps that follow are the checks still owed."
+   },
+   "implications": {
+    "rely_on": [],
+    "do_not_rely_on": [
+     {
+      "spoken": "the claimed solution as settled; nothing in it has standing yet",
+      "finding_ids": []
+     }
+    ],
+    "stop": [],
+    "new": []
+   },
+   "certainty_statement": {
+    "spoken": "Nothing is certified or accepted. Every item is open."
+   },
+   "sources": [
+    {
+     "kind": "problem",
+     "ref": "https://www.claymath.org/millennium/navier-stokes-equation/"
+    },
+    {
+     "kind": "pdf",
+     "ref": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf (sha256 0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f, 2959204 bytes, fetched 2026-11-22)"
+    },
+    {
+     "kind": "repo",
+     "ref": "github.com/openai/NavierStokesAndEuler at commit f9e8bc5b38b6e212696e8a30e3e91517af887bbd (2026-09-10); licence Apache-2.0; 816 Lean files; has a lakefile"
+    },
+    {
+     "kind": "formal statement (third party)",
+     "ref": "github.com/google-deepmind/formal-conjectures FormalConjectures/Millennium/NavierStokes.lean at 2207c54d0dbe960de591d280f997b195bf3f6e28"
+    }
+   ]
+  }
+ ],
+ "cycles": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-22T20:13:05Z",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "provenance": {
+    "source": "public record to 2026-11-22: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "cycle": 0,
+   "dated": "2026-09-07 to 2026-11-22",
+   "kind": "replay",
+   "preregistered": {
+    "question": "What is on the public record about this claim?",
+    "rule": "no look-ahead; each event dated by its first public posting; artifacts pinned by commit or hash",
+    "predictions": [],
+    "commit": null,
+    "before_data": false
+   },
+   "outcome": {
+    "verdict": "admitted",
+    "numbers": {
+     "claims": 1,
+     "artifacts": 2
+    }
+   },
+   "spoken": "Tristan Buckmaster posted a statement that he and Levent Alpöge had forced blow-up for the incompressible porous media, Boussinesq and Euler equations, crediting the program to Córdoba and Martínez-Zoroa and alleging that OpenAI had learned of their progress. OpenAI announced the result on its blog and at a press briefing by Sébastien Bubeck; the paper's metadata dates it 19:06 UTC. OpenAI denied Buckmaster's allegation. Scientific American quoted Luis Silvestre and Diego Córdoba, the latter saying it would be a big surprise if done. The repository openai/NavierStokesAndEuler reached its second and current commit, under Apache-2.0, with Comparator challenge files that take their reference statements from DeepMind's formal-conjectures. Bastounis, Circelli and Hansen posted arXiv 2610.08144, reporting that the Lean estimate corresponding to the paper's Lemma 8.6 uses one more derivative than the paper's inequality, and similar mismatches elsewhere, while stating that they make no claim about the correctness of the written proof. A Zenodo record by Deep Bhattacharjee reports an independent build of the development at commit f9e8bc5 on Lean v4.34.0-rc2: 816 files with no sorry, native_decide or new axiom; both statements on exactly the three standard axioms; the sixteen definitions and both statements identical to formal-conjectures at commit 8bf45ed. Machine and wall time are not stated. DeepMind's formal-conjectures file for the problem, at its latest commit, lists alternatives (C) and (D) as solved, citing an internal OpenAI model, and (A) and (B) as open. Alpöge and Buckmaster posted a claimed unforced blow-up for Navier–Stokes, recorded as DEBRIEF-math-navierstokes. Nervous Machine fetched the paper (sha256 0e779481…, 2,959,204 bytes) and pinned the repository at its second commit. The Clay Mathematics Institute's problem page lists the problem as Active.",
+   "finding_ids": [],
+   "gap_ids": [
+    "EG1",
+    "EG2",
+    "EG3",
+    "EG4"
+   ]
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "created_by": "contributed cycle (merge_cycles.py)",
+   "created_at": "2026-11-22T20:16:11Z",
+   "provenance": {
+    "source": "public pages read 2026-11-22: zenodo.org/records/23286556 (build record of 2026-10-10), arxiv.org/abs/2610.08144 (preprint of 2026-10-06), github.com/openai/NavierStokesAndEuler formalization.yaml at commit f9e8bc5, github.com/google-deepmind/formal-conjectures FormalConjectures/Millennium/NavierStokes.lean at commit 2207c54"
+   },
+   "audience": "briefing",
+   "kind": "replay",
+   "cycle": "external-2026-11-22",
+   "dated": "2026-11-22",
+   "by": null,
+   "preregistered": {
+    "question": "What does the public record show about independent checks of this development, and about its match to the written proof?",
+    "rule": "status read from each public page, pinned by commit, DOI or hash; no new checking by Nervous Machine",
+    "predictions": [],
+    "commit": null,
+    "before_data": false
+   },
+   "outcome": {
+    "verdict": "admitted",
+    "numbers": {
+     "external": {
+      "reports": [
+       {
+        "who": "Deep Bhattacharjee (Zenodo 10.5281/zenodo.23286556)",
+        "url": "https://zenodo.org/records/23286556",
+        "dated": "2026-10-10",
+        "operated_with": "not stated",
+        "what": "independent build of openai/NavierStokesAndEuler at commit f9e8bc5 on Lean v4.34.0-rc2: 816 files, no sorry, native_decide or new axiom; both Navier–Stokes statements on exactly propext, Classical.choice and Quot.sound; the sixteen definitions and both statements identical, declaration by declaration, to formal-conjectures at commit 8bf45ed; machine and wall time not stated"
+       }
+      ],
+      "formal_conjectures": {
+       "main_statement": "(C) and (D) marked research solved, citing an internal OpenAI model; (A) and (B) research open",
+       "url": "https://github.com/google-deepmind/formal-conjectures/blob/2207c54d0dbe960de591d280f997b195bf3f6e28/FormalConjectures/Millennium/NavierStokes.lean",
+       "formal_proof_linked": false
+      },
+      "preprint_on_translation": {
+       "who": "Alexander Bastounis, Fabian Circelli, Anders C. Hansen (King's College London; Cambridge)",
+       "url": "https://arxiv.org/abs/2610.08144",
+       "dated": "2026-10-06",
+       "what": "reports that the Lean estimate corresponding to Lemma 8.6 of the paper bounds the inverse with m+5 derivatives where the paper writes m+4, and similar mismatches elsewhere; states that it makes no claim about the correctness of the written proof"
+      },
+      "self_assessment": {
+       "source": "formalization.yaml at commit f9e8bc5",
+       "review_status": "self-assessed",
+       "method": "GPT-6 Astra agents, Codex framework"
+      }
+     }
+    }
+   },
+   "spoken": "What the public record showed on 22 November about OpenAI's forced blow-up development. One third party, on Zenodo in October, reports building it unchanged: no sorry, the three standard axioms, and statements identical to DeepMind's reference file, which now marks the forced alternatives as solved. A preprint from King's College London and Cambridge reports that at least one lemma's Lean version is weaker than the paper's inequality, and says that it makes no claim the result fails. The development's own metadata records its review as self-assessed. None of this is a cycle under its author's name here; it is what the record saw.\n",
+   "finding_ids": [],
+   "gap_ids": [
+    "EG1",
+    "EG4"
+   ]
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "audience": "briefing",
+   "created_by": "DEBRIEF/tools/watch_pages.py",
+   "created_at": "2026-11-22T20:16:58Z",
+   "provenance": {
+    "source": "public pages named in watch.yaml, fetched and hashed; status words read by the patterns there; hashes in source/external.sha256"
+   },
+   "cycle": "pages-2026-11-22",
+   "dated": "2026-11-22",
+   "kind": "replay",
+   "by": null,
+   "preregistered": {
+    "question": "What do the pages this record watches say today?",
+    "rule": "each page fetched, hashed and its status word read by a fixed pattern; no new checking",
+    "predictions": [],
+    "commit": null,
+    "before_data": false
+   },
+   "outcome": {
+    "verdict": "admitted",
+    "numbers": {
+     "external": {
+      "pages": [
+       {
+        "name": "Clay Mathematics Institute",
+        "url": "https://www.claymath.org/millennium/navier-stokes-equation/",
+        "read": "2026-11-22T20:16:58Z",
+        "role": "problem authority (Millennium Prize rules: publication, two years, general acceptance)",
+        "sha256": "3bf5fab042b6cbe7d2bf0052ca6bea8c6be88b6831a751c4877357e76934cc77",
+        "bytes": 108515,
+        "hash_of": "text",
+        "status": "Active",
+        "changed": true
+       },
+       {
+        "name": "DeepMind formal-conjectures, NavierStokes.lean",
+        "url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/main/FormalConjectures/Millennium/NavierStokes.lean",
+        "read": "2026-11-22T20:16:58Z",
+        "role": "third-party formal statement of the four alternatives",
+        "sha256": "bd25a14ac8b8f17e6169005d33d39f5f778456521c68678395e3088697aa85db",
+        "bytes": 14574,
+        "hash_of": "text",
+        "status": "research solved",
+        "changed": true
+       }
+      ]
+     }
+    }
+   },
+   "spoken": "What the watched pages said on 2026-11-22. Clay Mathematics Institute: Active; DeepMind formal-conjectures, NavierStokes.lean: research solved. A page's status word is what its keeper says; it gives nothing here a standing.",
+   "finding_ids": [],
+   "gap_ids": []
+  }
+ ],
+ "findings": [],
+ "gaps": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-22T20:13:05Z",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "provenance": {
+    "source": "public record to 2026-11-22: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG1",
+   "title": "The Lean development has not been built or kernel-checked by anyone outside the claimant",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 1,
+   "history": [
+    {
+     "cycle": "external-2026-11-22",
+     "hypothesis": "public record: has anyone outside the claimant built it?",
+     "before_data": false,
+     "result": "a Zenodo build record of 2026-10-10 by Deep Bhattacharjee reports the development at commit f9e8bc5 building on Lean v4.34.0-rc2 with no sorry, the three standard axioms, and statements identical to DeepMind's reference file; machine and wall time not stated; not a cycle under his name here; status stays proposed"
+    }
+   ],
+   "closes_with": [
+    {
+     "what": "a pre-registered rerun: fetch at the pinned commit, build, confirm no sorry or admit, print the axioms",
+     "kind": "rerun",
+     "external": true,
+     "who_could_act": "anyone with a machine and a few hours"
+    }
+   ],
+   "spoken": "The claimant reports a Lean development that compiles with standard axioms only. Nobody outside the claimant has reported building it.",
+   "ask": {
+    "spoken": "A rerun of the Lean build on an independent machine, written down first."
+   },
+   "expected_signal": "a rerun cycle reporting build exit status, the sorry/admit scan and the axiom list for the main theorem",
+   "resolution_by": "none registered"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-22T20:13:05Z",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "provenance": {
+    "source": "public record to 2026-11-22: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG2",
+   "title": "Do the formal statements say what the problem asks?",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 2,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "a machine comparison of the claimant's main theorem with the third-party formal statement navier_stokes_breakdown_R3 in google-deepmind/formal-conjectures, then a human read of any difference",
+     "kind": "trace",
+     "external": true,
+     "who_could_act": "anyone who can read Lean; the two statements are public"
+    },
+    {
+     "what": "two independent mathematicians read the formal statement against the problem as posed and sign, or refuse",
+     "kind": "read",
+     "external": true,
+     "who_could_act": "a mathematician in the problem's area, about an hour with a reading guide"
+    }
+   ],
+   "spoken": "A Lean check establishes that the formal statement follows from its hypotheses. Whether that formal statement is the problem as posed is a separate question that a person has to answer. A third-party formalization of the problem statement exists, so part of this can be compared by machine.",
+   "ask": {
+    "spoken": "A reading of the formal statement against the problem as posed, by someone who did not write it."
+   },
+   "expected_signal": "a trace cycle and two signed read cycles, or a refusal naming the difference",
+   "resolution_by": "none registered"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-22T20:13:05Z",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "provenance": {
+    "source": "public record to 2026-11-22: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG3",
+   "title": "No independent mathematician has reported reading the proof, and there is no referee report",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 3,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "a read cycle by a mathematician in the area who is not an author, signing or refusing each main step",
+     "kind": "read",
+     "external": true,
+     "who_could_act": "a mathematician in the problem's area"
+    },
+    {
+     "what": "a referee report or journal acceptance, recorded by date",
+     "kind": "measurement",
+     "external": true,
+     "who_could_act": "a journal; the record notes the date when it happens"
+    }
+   ],
+   "spoken": "The claim was announced on OpenAI's blog and at a press briefing, with the paper on OpenAI's own servers and the Lean development on GitHub. No independent reading, referee report or journal submission is on the public record.",
+   "ask": {
+    "spoken": "Someone in the field reads it and says, under their name, what holds and what does not."
+   },
+   "expected_signal": "a signed or refused read cycle; a dated referee report",
+   "resolution_by": "none registered"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-22T20:13:05Z",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "provenance": {
+    "source": "public record to 2026-11-22: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG4",
+   "title": "A preprint reports that the Lean statements and the written proof differ in at least one lemma",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 4,
+   "history": [
+    {
+     "cycle": "external-2026-11-22",
+     "hypothesis": "public record: what does the preprint claim?",
+     "before_data": false,
+     "result": "arXiv 2610.08144 (Bastounis, Circelli, Hansen, 2026-10-06) reports the Lean estimate for Lemma 8.6 uses m+5 derivatives against the paper's m+4, and similar mismatches elsewhere, while making no claim about the written proof's correctness; status stays proposed"
+    }
+   ],
+   "closes_with": [
+    {
+     "what": "an analyst reads Lemma 8.6 and the other mismatches the preprint lists against the Lean files and signs or refuses that each is immaterial to the formal result",
+     "kind": "read",
+     "external": true,
+     "who_could_act": "an analyst who reads Lean, a few hours with the preprint's list"
+    }
+   ],
+   "spoken": "Bastounis, Circelli and Hansen report that the Lean estimate standing in for the paper's Lemma 8.6 bounds the inverse with one more derivative than the paper's inequality, and that similar mismatches occur elsewhere, so a clean Lean check does not by itself confirm the written proof. They make no claim that the result fails. Whether the formal development carries the paper's argument, or a different one that reaches the same statement, is a reading.",
+   "ask": {
+    "spoken": "A reading of the preprint's listed mismatches against the Lean development, signed or refused one by one."
+   },
+   "expected_signal": "a read cycle listing each mismatch as immaterial, material or unresolved",
+   "resolution_by": "none registered"
+  }
+ ],
+ "anomalies": [],
+ "background": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-22T20:13:05Z",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "provenance": {
+    "source": "public record to 2026-11-22: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "Navier–Stokes existence and smoothness",
+   "spoken": "Do smooth solutions of the three-dimensional incompressible Navier–Stokes equations, started from smooth data, stay smooth for all time, or can the velocity become unbounded in finite time? Fefferman's formulation accepts either answer: a proof of existence and smoothness, with no force on space (A) or on the torus (B), or a proof of breakdown, which may use a smooth force, on space (C) or on the torus (D). This claim is (C) and (D) with a force. A third-party Lean formalization of all four alternatives exists in DeepMind's formal-conjectures, and the development's Comparator files take their reference statements from it.",
+   "source": "https://www.claymath.org/millennium/navier-stokes-equation/"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-22T20:13:05Z",
+   "mission_id": "navierstokes-forced-2026-11",
+   "pod": "DEBRIEF-math-navierstokes-forced",
+   "provenance": {
+    "source": "public record to 2026-11-22: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "The claim by OpenAI",
+   "spoken": "The paper's main result says that for every positive viscosity there are a smooth force with compact support in space and time, a compact set, and smooth velocity and pressure fields on space, starting from zero velocity, supported in that set, with bounded kinetic energy, whose velocity becomes unbounded as time approaches one; and so no smooth solution with that force and datum exists for all time with bounded energy. Compact support carries the construction to the torus. The paper names these as alternatives (C) and (D) of Fefferman's formulation. A companion paper claims unforced blow-up for the Euler equations. The repository's metadata file records four main results with zero sorry and the three standard axioms, lists GPT-6 Astra in the Codex framework as the method, and records the review status as self-assessed. The press reported experts who regard the force as a loophole in the problem's wording and others who called the result a surprise if it holds. Buckmaster's statement of 7 September alleges that OpenAI adopted his and Alpöge's method after learning of their progress, which OpenAI denies; the statement says the pair's own forced results were checked in Lean on 22 August.",
+   "source": "https://openai.com/index/navier-stokes-solution/"
+  }
+ ],
+ "sessions": []
+}

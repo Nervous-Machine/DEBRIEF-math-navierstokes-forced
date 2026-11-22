@@ -1,0 +1,11 @@
+# Public pages this record watches (DEBRIEF/tools/watch_pages.py). A change in a page's hash or status word is
+# recorded as a dated replay cycle; it gives nothing a standing. The status pattern's group 1 is the status word.
+pages:
+  - name: Clay Mathematics Institute
+    role: "problem authority (Millennium Prize rules: publication, two years, general acceptance)"
+    url: https://www.claymath.org/millennium/navier-stokes-equation/
+    status: 'Navier-Stokes Equation (Active|Unsolved|Solved)'
+  - name: DeepMind formal-conjectures, NavierStokes.lean
+    role: third-party formal statement of the four alternatives
+    url: https://raw.githubusercontent.com/google-deepmind/formal-conjectures/main/FormalConjectures/Millennium/NavierStokes.lean
+    status: '\(C\) Breakdown of \(forced\) Navier.Stokes solutions on [^.]{1,8}\.[^@]{0,80}@\[category (research open|research solved)'

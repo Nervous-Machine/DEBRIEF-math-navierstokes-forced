@@ -1,0 +1,46 @@
+kind: replay
+cycle: external-2026-11-22
+dated: '2026-11-22'
+by: null
+provenance:
+  source: 'public pages read 2026-11-22: zenodo.org/records/23286556 (build record of 2026-10-10), arxiv.org/abs/2610.08144 (preprint of 2026-10-06), github.com/openai/NavierStokesAndEuler formalization.yaml at commit f9e8bc5, github.com/google-deepmind/formal-conjectures FormalConjectures/Millennium/NavierStokes.lean at commit 2207c54'
+preregistered:
+  question: What does the public record show about independent checks of this development, and about its match to the written proof?
+  rule: status read from each public page, pinned by commit, DOI or hash; no new checking by Nervous Machine
+  predictions: []
+  commit: null
+  before_data: false
+outcome:
+  verdict: admitted
+  numbers:
+    external:
+      reports:
+        - who: Deep Bhattacharjee (Zenodo 10.5281/zenodo.23286556)
+          url: https://zenodo.org/records/23286556
+          dated: '2026-10-10'
+          operated_with: not stated
+          what: 'independent build of openai/NavierStokesAndEuler at commit f9e8bc5 on Lean v4.34.0-rc2: 816 files, no sorry, native_decide or new axiom; both Navier–Stokes statements on exactly propext, Classical.choice and Quot.sound; the sixteen definitions and both statements identical, declaration by declaration, to formal-conjectures at commit 8bf45ed; machine and wall time not stated'
+      formal_conjectures:
+        main_statement: "(C) and (D) marked research solved, citing an internal OpenAI model; (A) and (B) research open"
+        url: https://github.com/google-deepmind/formal-conjectures/blob/2207c54d0dbe960de591d280f997b195bf3f6e28/FormalConjectures/Millennium/NavierStokes.lean
+        formal_proof_linked: false
+      preprint_on_translation:
+        who: Alexander Bastounis, Fabian Circelli, Anders C. Hansen (King's College London; Cambridge)
+        url: https://arxiv.org/abs/2610.08144
+        dated: '2026-10-06'
+        what: 'reports that the Lean estimate corresponding to Lemma 8.6 of the paper bounds the inverse with m+5 derivatives where the paper writes m+4, and similar mismatches elsewhere; states that it makes no claim about the correctness of the written proof'
+      self_assessment:
+        source: formalization.yaml at commit f9e8bc5
+        review_status: self-assessed
+        method: GPT-6 Astra agents, Codex framework
+spoken: >
+  What the public record showed on 22 November about OpenAI's forced blow-up development. One third party, on Zenodo in
+  October, reports building it unchanged: no sorry, the three standard axioms, and statements identical to DeepMind's
+  reference file, which now marks the forced alternatives as solved. A preprint from King's College London and
+  Cambridge reports that at least one lemma's Lean version is weaker than the paper's inequality, and says that it
+  makes no claim the result fails. The development's own metadata records its review as self-assessed. None of this
+  is a cycle under its author's name here; it is what the record saw.
+finding_ids: []
+gap_ids:
+- EG1
+- EG4

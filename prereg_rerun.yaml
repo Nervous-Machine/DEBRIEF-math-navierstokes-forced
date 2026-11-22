@@ -1,0 +1,23 @@
+# Pre-registration for the first rerun of this claim's Lean development. Fill in, then register BEFORE running:
+#   python3 <DEBRIEF>/tools/prereg.py register prereg_rerun.yaml   (writes prereg_rerun.yaml.sha256; commit both)
+mission: DEBRIEF-math-navierstokes-forced
+by: "<your name as you want it recorded>"
+dated: "<YYYY-MM-DD>"
+question: "Does the claimant's Lean development build at the pinned commit on an independent machine, with no sorry or admit, and which axioms does the main theorem use?"
+rule: "All checks below pass as predicted; any miss is recorded under misses."
+checks:
+  - id: R1
+    what: "fetch github.com/openai/NavierStokesAndEuler at f9e8bc5b38b6e212696e8a30e3e91517af887bbd; confirm the tree matches"
+    prediction: "commit present; tree unchanged"
+  - id: R2
+    what: "lake exe cache get (if Mathlib) and lake build; record wall time and peak memory"
+    prediction: "exit 0, 0 errors; <your predicted time and memory>"
+  - id: R3
+    what: "scan every .lean file of the development (excluding .lake and vendored dependencies) for sorry, admit, native_decide, axiom declarations, implemented_by and extern; list each hit by file and line"
+    prediction: "no hit in any file of the default build target's import closure; a hit in a file outside that closure (a statement-only or test file) is listed but is not a miss"
+  - id: R4
+    what: "#print axioms on the main theorem"
+    prediction: "propext, Classical.choice, Quot.sound only"
+  - id: R5
+    what: "compare the main theorem statement with navier_stokes_breakdown_R3 in google-deepmind/formal-conjectures FormalConjectures/Millennium/NavierStokes.lean at 2207c54d0dbe960de591d280f997b195bf3f6e28; state identical, equivalent (with proof), or different"
+    prediction: "<your prediction>"
