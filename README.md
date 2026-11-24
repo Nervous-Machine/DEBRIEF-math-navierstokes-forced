@@ -11,7 +11,7 @@ A DEBRIEF mission record (protocol https://github.com/Nervous-Machine/DEBRIEF) f
 
 | | |
 |---|---|
-| checked by machine | nobody yet; reported elsewhere, not filed here: [Deep Bhattacharjee (Zenodo 10.5281/zenodo.23286556)](https://zenodo.org/records/23286556) |
+| checked by machine | no rerun filed here; reported elsewhere: [Deep Bhattacharjee (Zenodo 10.5281/zenodo.23286556)](https://zenodo.org/records/23286556) |
 | read by a person | nobody yet; no reading guide yet |
 | elsewhere | [Clay Mathematics Institute](https://www.claymath.org/millennium/navier-stokes-equation/): Active · [DeepMind formal-conjectures, NavierStokes.lean](https://raw.githubusercontent.com/google-deepmind/formal-conjectures/main/FormalConjectures/Millennium/NavierStokes.lean): research solved |
 | related | [Navier–Stokes blow-up, unforced (Alpöge and Buckmaster)](https://github.com/Nervous-Machine/DEBRIEF-math-navierstokes): the forced case; the force is what the other claim removes; same problem page · same claimant: [Prime gaps ≤ 186 (OpenAI)](https://github.com/Nervous-Machine/DEBRIEF-math-primegaps) |
